@@ -6,6 +6,9 @@ import java.SortedHeap;
  * Created by artem on 5/7/16.
  */
 public class SortedHeapImplementation implements SortedHeap {
+    
+    private Integer array[] = new Integer[10];
+    
     @Override
     public void add(Integer newValue) {
 
@@ -18,11 +21,11 @@ public class SortedHeapImplementation implements SortedHeap {
 
     @Override
     public Integer find(int index) {
-        return null;
+        return array[index];
     }
 
     @Override
     public int size() {
-        return 0;
+        return array.length;
     }
 }
